@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".deliverySummary">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="6dp"
+
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_orderSummary"
+                android:layout_marginBottom="20dp"
+                android:text="ORDER ID"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/order_num"
+                android:text="9"
+                android:gravity="right"
+                android:layout_toRightOf="@id/tv_orderSummary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+               />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="6dp"
+
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_name_tv"
+                android:layout_marginBottom="20dp"
+                android:text="Store Name"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_name_val"
+                android:text="Yo Mamas"
+                android:gravity="right"
+                android:layout_toRightOf="@id/store_name_tv"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

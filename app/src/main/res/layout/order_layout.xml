@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:cardElevation="6dp"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#0032BD"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:id="@+id/order_id"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="US Store"
+                android:gravity="center"
+                android:id="@+id/store_id"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_height="match_parent"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="GHS11"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:id="@+id/total_price__number"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

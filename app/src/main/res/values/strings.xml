@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">yomamas</string>
+
+    <string-array name="region">
+        <item>Region</item>
+        <item>Greater Accra</item>
+
+
+    </string-array>
+
+
+    <string-array name="places_accra">
+        <item>Choose Area of Operation</item>
+        <item>Spintex</item>
+        <item>East Legon </item>
+        <item>Tema</item>
+        <item>Nungua</item>
+        <item>Teshie</item>
+
+    </string-array>
+</resources>

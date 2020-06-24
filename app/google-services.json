@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "388051766280",
+    "firebase_url": "https://yomamas.firebaseio.com",
+    "project_id": "yomamas",
+    "storage_bucket": "yomamas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388051766280:android:4c3a39dee82b46e36dd5bd",
+        "android_client_info": {
+          "package_name": "com.example.yomamas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388051766280-pmufmf30kb9e3k4adqa5h5ud8740qv2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpEb0Y0qfCkwBWjmb4CgjOAXAaf3dgc6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388051766280-pmufmf30kb9e3k4adqa5h5ud8740qv2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

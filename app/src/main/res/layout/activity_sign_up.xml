@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:isScrollContainer="true"
+    android:layout_height="match_parent"
+    tools:context=".signUp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="First Name"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/f_name"
+                    android:inputType="textCapWords"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="Last Name"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/l_name"
+                    android:inputType="textCapWords"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="Telephone"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/tele"
+                    android:inputType="phone|number"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="Username or Email"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/username"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Re-Enter Password"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/re_password"
+                    android:inputType="textPassword"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:hint="Address"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/address"
+                    android:inputType="textPostalAddress"
+                    android:layout_height="match_parent"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:hint="Password"
+                android:id="@+id/region"
+                android:entries="@array/region"
+                tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                android:layout_marginBottom="10dp"
+                android:layout_height="50dp">
+
+
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:entries="@array/places_accra"
+                android:id="@+id/area"
+                tools:listitem="@layout/support_simple_spinner_dropdown_item"
+                android:layout_marginBottom="40dp"
+                android:layout_height="50dp">
+
+
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kitWave"
+                style="@style/SpinKitView.Small.Wave"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="#6200EE" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/sign_up_btn"
+                android:layout_gravity="center"
+                android:text="SIGN UP"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:text="Already have an account?"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/signin_layout"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:text="SIGN IN"
+                        android:textSize="15sp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#000"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
