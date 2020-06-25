@@ -79,14 +79,16 @@ public class login extends AppCompatActivity {
                                      startActivity(i);
                                      wave.setVisibility(View.GONE);
                                  }else {
-                                     Toast.makeText(login.this,"Invalid Cedentials",Toast.LENGTH_LONG);
+                                     wave.setVisibility(View.GONE);
+                                     Toast.makeText(login.this,"Invalid Cedentials",Toast.LENGTH_LONG).show();
                                      Log.d("login_problem","password");
 
                                  }
                              }
 
                          }else {
-                             Toast.makeText(login.this,"Invalid Cedentials",Toast.LENGTH_LONG);
+                             wave.setVisibility(View.GONE);
+                             Toast.makeText(login.this,"Invalid Cedentials",Toast.LENGTH_LONG).show();
                          }
                        }
 
